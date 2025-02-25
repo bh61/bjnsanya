@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+  .image-container {
+      position: relative;
+    }
+
+  .image-container img {
+      width: 70%;
+    }
+
+  .image-container::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 70%;
+      height: 100px;  
+      background-color: rgba(230, 232, 239, 0.5); 
+    }
+  </style>
+</head>
+
+<body>
+  <div class="image-container">
+    <img src="图片/图片遮罩.jpg" alt="">
+  </div>
+</body>
+
+</html>

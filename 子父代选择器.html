@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fatherss p { 
+            color: red;
+    }
+        .father > p {
+            color: royalblue;
+        }
+
+        .bing, .asd, .rrr{
+            font-size: 88px;
+            font-weight: bold;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .box:hover{
+            background-color: blueviolet;
+        }
+
+        .bgbox {
+            width: 200px;
+            height: 200px;
+            background: skyblue url('https://vuejsexamples.com/assets/vue.png') no-repeat center center;
+            background-size: 100% 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <!----后代选择器-->
+    <div class="fatherss">
+        父元素
+        <p class="456">qxh</p>
+        <div>apupupup
+            <p>666</p>
+        </div>
+        <div>123456</div>
+    </div>
+    <!----子代选择器-->
+    <div class="father">
+        <p>aqqqqqq</p>
+        <div>
+            <p>zaizhong</p>
+            <!--并集选择器-->
+        </div>
+        <p>爷真是笑了</p>
+    </div>
+
+    <div class="bing">bing</div>
+    <p class="asd">654</p>
+    <a class="rrr">321</a>
+
+    <div class="box">hezi</div>
+<!--背景-->
+    <div class="bgbox"></div>
+</body>
+</html>
